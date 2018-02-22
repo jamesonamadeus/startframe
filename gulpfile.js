@@ -10,7 +10,7 @@ gulp.task('browserSync', function() {
     })
 })
 
-// gulp sass
+// sass
 gulp.task('sass', function() {
     return gulp.src('src/css/scss/**/*.scss') // pulls all .scss files & its children
       .pipe(sass()) // scss files --> css
@@ -23,5 +23,7 @@ gulp.task('sass', function() {
 // watch
 gulp.task('watch', ['browserSync', 'sass'], function (){
     gulp.watch('src/css/scss/**/*.scss', ['sass']); 
-    // Other watchers
+    // Reloads the browser whenever HTML or JS files change
+    gulp.watch('src/*.html', browserSync.reload); 
+    gulp.watch('src/js/**/*.js', browserSync.reload); 
 });
