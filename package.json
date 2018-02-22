@@ -1,0 +1,28 @@
+{
+  "name": "startframe",
+  "version": "1.0.0",
+  "description": "Starter Framework with gulp & sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesonamadeus/startframe.git"
+  },
+  "keywords": [
+    "starter",
+    "framework",
+    "boilerplate",
+    "gulp",
+    "sass",
+    "landing-page",
+    "site"
+  ],
+  "author": "jamesonamadeus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesonamadeus/startframe/issues"
+  },
+  "homepage": "https://github.com/jamesonamadeus/startframe#readme"
+}
