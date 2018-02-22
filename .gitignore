@@ -1,2 +1,8 @@
+# Exclude stuff 
 dist 
 node_modules
+
+# Exclude hidden OS files
+.DS_Store
+._*
+Thumbs.db
