@@ -12,4 +12,10 @@ $ npm install
 $ gulp
 ```
 
-Yup, that's all~
+## Deployment
+
+Deploy with a minifed css & js in the /dist folder.  
+
+```
+$ gulp build
+```
