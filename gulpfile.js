@@ -6,6 +6,7 @@ var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
 var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
+var runSequence = require('run-sequence');
 
 
 gulp.task('browserSync', function() {
@@ -55,3 +56,17 @@ gulp.task('images', function(){
     .pipe(gulp.dest('dist/images'))
 });
 
+// build
+gulp.task('build', function (callback) {
+    runSequence('sass', 
+      ['useref', 'images'],
+      callback
+    )
+})
+
+//default
+gulp.task('default', function (callback) {
+    runSequence(['sass','browserSync', 'watch'],
+      callback
+    )
+})
