@@ -1,17 +1,14 @@
-.clearfix,
-.group {
-  zoom: 1; }
-  .clearfix:before, .clearfix:after,
-  .group:before,
-  .group:after {
-    content: "\0020";
-    display: block;
-    height: 0;
-    overflow: hidden; }
-  .clearfix:after,
-  .group:after {
-    clear: both; }
+.clearfix:after,
+.group:after {
+  content: " ";
+  display: block;
+  clear: both; }
 
+/** --------------------------------------------------------------------
+
+    Flexbox Mixins
+
+--------------------------------------------------------------------- */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 100%;
@@ -119,19 +116,26 @@ a {
   ol {
     font-size: 14px; } }
 
-.clearfix,
-.group {
-  zoom: 1; }
-  .clearfix:before, .clearfix:after,
-  .group:before,
-  .group:after {
-    content: "\0020";
-    display: block;
-    height: 0;
-    overflow: hidden; }
-  .clearfix:after,
-  .group:after {
-    clear: both; }
+.clearfix:after,
+.group:after {
+  content: " ";
+  display: block;
+  clear: both; }
+
+/** --------------------------------------------------------------------
+
+    Flexbox Mixins
+
+--------------------------------------------------------------------- */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
 
 .btn {
   border-radius: 5px;
@@ -202,3 +206,6 @@ audio,
 iframe,
 object {
   max-width: 100%; }
+
+h1 {
+  color: #4834d4; }
