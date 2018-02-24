@@ -14,7 +14,7 @@ $ gulp
 
 ## Deployment
 
-Deploy with a minifed css & js in the /dist folder.  
+Deploy with a minifed css & js into the /dist folder 
 
 ```
 $ gulp build
