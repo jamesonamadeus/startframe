@@ -48,7 +48,6 @@
   
 
 // breakpoints helper
-
 @mixin breakpoint( $point ) {
     @media ( min-width: $point ) {
     @content;
@@ -56,11 +55,11 @@
 }
   
 // font size to REM
-
 @mixin font-size ($size: 14, $parentSize: 16) {
     font-size: $size + 0px !important;
     font-size: 0rem + $size/$parentSize !important;
 }
+
 
 // Vendor prefix'd helpers
 
