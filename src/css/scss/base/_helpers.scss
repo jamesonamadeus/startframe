@@ -1,0 +1,18 @@
+@import "_mixins.scss";
+
+.hide {
+    @include visually-hidden();
+}
+  
+.remove {
+    display: none;
+}
+  
+.is-hidden {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    opacity: 0;
+    @include transition(opacity ease-in-out .2s);
+    visibility: hidden;
+}
