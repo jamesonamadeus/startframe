@@ -212,7 +212,7 @@ html {
   padding: 0 60px; }
 
 .btn-sm {
-  font-size: .85em;
+  font-size: 0.85em;
   height: 30.8px;
   padding: 0 10px; }
 
@@ -243,3 +243,6 @@ object {
 
 h1 {
   color: #4834d4; }
+
+body {
+  margin: 0; }
