@@ -2,8 +2,8 @@
 .btn {
   border-radius: $btn-br;
   background: transparent;
-  border: 1px solid $primary-color;
-  color: $primary-color;
+  border: 1px solid $color-primary;
+  color: $color-primary;
   display: inline-block;
   font-size: $font-size;
   height: $line-height;
@@ -15,34 +15,34 @@
 
   &:hover,
   &:focus {
-    background: $primary-color;
-    border-color: $primary-color;
+    background: $color-primary;
+    border-color: $color-primary;
     color: #fff;
     text-decoration: none;
   }
 
   &:active {
-    background: darken($primary-color, 10);
-    border-color: darken($primary-color, 10);
+    background: darken($color-primary, 10);
+    border-color: darken($color-primary, 10);
   }
 }
 
 // Primary action button
 .btn-primary {
-  background-color: $primary-color;
-  border-color: $primary-color;
+  background-color: $color-primary;
+  border-color: $color-primary;
   color: #fff;
 
   &:hover,
   &:focus {
-    background: darken($primary-color, 5);
-    border-color: darken($primary-color, 5);
+    background: darken($color-primary, 5);
+    border-color: darken($color-primary, 5);
     color: #fff;
   }
 
   &:active {
-    background: darken($primary-color, 10);
-    border-color: darken($primary-color, 10);
+    background: darken($color-primary, 10);
+    border-color: darken($color-primary, 10);
     color: #fff;
   }
 }
@@ -66,14 +66,14 @@
   box-shadow: none;
   background: transparent;
   border: 0;
-  color: $primary-color;
+  color: $color-primary;
   text-shadow: none;
   text-transform: none;
 
   &:hover,
   &:focus {
     background: transparent;
-    color: $primary-color;
+    color: $color-primary;
     text-decoration: underline;
   }
 }

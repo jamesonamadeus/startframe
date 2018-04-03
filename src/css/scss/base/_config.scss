@@ -37,12 +37,12 @@ $grey: #aaa;
 $black: #111;
 
 // Project color variables
-$primary-color: $blue;
-$secondary-color: $teal;
-$tertiary-color: $tang;
+$color-primary: $blue;
+$color-secondary: $teal;
+$color-teritary: $tang;
 
-$danger-color: $redpink; // Bad color for errors, validation etc.
-$success-color: $green; // Good color for success etc.
-$info-color: $blue; // Good color for success etc.
-$warning-color: $orange; // Good color for success etc.
-$subtle-color: $grey; // Subtle color for subtle text
+$color-danger: $redpink; // Bad color for errors, validation etc.
+$color-success: $green; // Good color for success etc.
+$color-info: $blue; // Good color for success etc.
+$color-warning: $orange; // Good color for success etc.
+$color-subtle: $grey; // Subtle color for subtle text

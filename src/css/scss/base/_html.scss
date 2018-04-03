@@ -10,7 +10,7 @@ body {
 }
 
 blockquote {
-  border-left: 2px solid $primary-color;
+  border-left: 2px solid $color-primary;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 1.4em;
   font-style: italic;
@@ -93,7 +93,7 @@ code {
 }
 
 a {
-  color: $primary-color;
+  color: $color-primary;
 
   &:hover,
   &:focus {
