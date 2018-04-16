@@ -1,6 +1,10 @@
 @import "_config.scss";
 @import "_mixins.scss";
 
+* {
+  @include transition(all 0.5s ease);
+}
+
 body {
   font-family: $system-font-stack;
   font-size: $font-size;

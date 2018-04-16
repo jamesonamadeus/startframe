@@ -43,6 +43,12 @@
     Flexbox Mixins
 
 --------------------------------------------------------------------- */
+* {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 100%;
@@ -245,4 +251,57 @@ h1 {
   color: #4834d4; }
 
 body {
-  margin: 0; }
+  margin: 0 auto; }
+
+.main {
+  margin: 0 auto; }
+
+.section {
+  margin: 0 auto;
+  text-align: center; }
+  .section-inner {
+    padding: 60px 10%; }
+  .section .heading {
+    font-size: 36px !important;
+    font-size: 2.25rem !important;
+    color: #111;
+    padding: 0;
+    margin: 0 auto 30px;
+    text-align: center; }
+  .section p {
+    margin: 0 auto 20px;
+    max-width: 600px;
+    text-align: center; }
+  .section .btn {
+    width: 300px; }
+
+@media only screen and (max-width: 1000px) {
+  .section-inner {
+    padding: 50px 5%; } }
+
+@media only screen and (max-width: 800px) {
+  .section .heading {
+    font-size: 32px !important;
+    font-size: 2rem !important; }
+  .section-inner {
+    padding: 50px 3%; } }
+
+@media only screen and (max-width: 600px) {
+  .section-inner {
+    padding: 40px 20px; }
+  .section .heading {
+    font-size: 28px !important;
+    font-size: 1.75rem !important;
+    margin: 0 auto 20px; } }
+
+@media only screen and (max-width: 480px) {
+  .section-inner {
+    padding: 30px 15px; }
+  .section .heading {
+    font-size: 24px !important;
+    font-size: 1.5rem !important; } }
+
+@media only screen and (max-width: 380px) {
+  .section .heading {
+    font-size: 20px !important;
+    font-size: 1.25rem !important; } }

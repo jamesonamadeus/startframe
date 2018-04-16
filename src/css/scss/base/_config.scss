@@ -8,8 +8,9 @@ $system-font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; // System fonts
 
 // Responsive breakpoints
+$break-xsm: 380px;
 $break-sm: 480px;
-$break-med: 600px;
+$break-md: 600px;
 $break-lg: 800px;
 $break-xlg: 1000px;
 
@@ -34,12 +35,15 @@ $purple: #be2edd;
 $white: #fff;
 $silver: #ddd;
 $grey: #aaa;
+$blackgrey: #333;
 $black: #111;
 
 // Project color variables
 $color-primary: $blue;
 $color-secondary: $teal;
 $color-teritary: $tang;
+
+$color-text: $blackgrey;
 
 $color-danger: $redpink; // Bad color for errors, validation etc.
 $color-success: $green; // Good color for success etc.

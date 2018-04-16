@@ -1,3 +1,90 @@
 body {
-    margin: 0;
+  margin: 0 auto;
+}
+
+.main {
+  margin: 0 auto;
+}
+
+.section {
+  margin: 0 auto;
+  text-align: center;
+
+  &-inner {
+    padding: 60px 10%;
+  }
+
+  &-alt {
+  }
+
+  .heading {
+    @include font-size(36);
+    color: $black;
+    padding: 0;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+
+  p {
+    margin: 0 auto 20px;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .btn {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: $break-xlg) {
+  .section {
+    &-inner {
+      padding: 50px 5%;
+    }
+  }
+}
+
+@media only screen and (max-width: $break-lg) {
+  .section {
+    .heading {
+      @include font-size(32);
+    }
+
+    &-inner {
+      padding: 50px 3%;
+    }
+  }
+}
+
+@media only screen and (max-width: $break-md) {
+  .section {
+    &-inner {
+      padding: 40px 20px;
+    }
+
+    .heading {
+      @include font-size(28);
+      margin: 0 auto 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: $break-sm) {
+  .section {
+    &-inner {
+      padding: 30px 15px;
+    }
+
+    .heading {
+      @include font-size(24);
+    }
+  }
+}
+
+@media only screen and (max-width: $break-xsm) {
+  .section {
+    .heading {
+      @include font-size(20);
+    }
+  }
 }
